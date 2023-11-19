@@ -15,12 +15,12 @@
               
  **Apresentação** ![movie](https://github.com/suellencosta7/Mini_Projetos.Front/blob/main/imgs/icons8-projetor-de-filme-32.png)
 
-_*Popularidade e premiações dos filmes entre 2020 a 2023*_ <br>
+_*Popularidade e premiações dos filmes entre 2020 a 2022*_ <br>
 _Animação e Comédia_
 
 <br>Para este projeto, escolhi múltiplas análises, com intuido em aproveitar ao máximo as técnicas de ETL. Escolhi três bases de dados; aquivo CSV,API TMDB e IMDB.
 Para início, extrair os filmes mais populares disponíveis no arquivo _'movies.csv_' levando como critério de julgamento a pontuação de nota média e votação. Com 
-os _filmes mais polulares entre 2020 a 2023_ em mão, extrair os dados de população dos mesmo vindo da API TMDB. <br>
+os _filmes mais polulares entre 2020 a 2022_ em mão, extrair os dados de população dos mesmo vindo da API TMDB. <br>
 Para complentar, extrair da IMDB os filmes que tiveram alguma premiação ou reconhecimento.
 O foco desta analise é extrair os filmes mais populares com o máximo de informações que o julgam como tal. <br>
 <br>

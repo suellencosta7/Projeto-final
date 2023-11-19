@@ -1,74 +1,46 @@
 
 ### Programa de bolsas
-![d](https://github.com/suellencosta7/Trilha_Aprendizado/blob/main/icon-compass.png) ***Compass UOL em parceria com a UniCesumar*** <br>
+![d](https://github.com/suellencosta7/projeto_estagio/tree/main/arquivos/imgs/icon-compass.png) ***Compass UOL em parceria com a UniCesumar*** <br>
  
- *Sprint 8*: Supervisionada por Augusto Schnorr
+ 
+ * Etapa supervisionada por Augusto Schnorr
 
 
-   "AWS Data Egineering" empregado pela Compass.uol, repositório criado para obter organização
-e acompanhamento de todo programa.<br>
-<br>
-    Cada Sprint, tem o seu *Readme*, ou seja, informações pessoais e desenvolvimento da mesma.<br>
-Para esta, as informações pessoais foram retiradas para focar nas informações do projeto. <br>
-   
+   "AWS Data Egineering" empregado pela Compass.uol.<br>
+    O desafio foi : _Usar o aquivo CSV como base, tranzendo novas informações da API TBDB ou Twiter de acordo com o tema escolhido_.
+
+
 
 ---
               
  **Apresentação** ![movie](https://github.com/suellencosta7/Mini_Projetos.Front/blob/main/imgs/icons8-projetor-de-filme-32.png)
 
-_*Popularidade e premiações dos filmes e atores entre 2020 a 2023*_ <br>
+_*Popularidade e premiações dos filmes entre 2020 a 2023*_ <br>
 _Animação e Comédia_
 
-<br>Para este projeto, escolhi uma análise ampla, quero trazer os filmes mais populares disponíveis no arquivo _'movies.csv_'. 
-Como critério de julgamento da popularidade de um filme, considerei a média e quantidade de votação, completando essa análise com 
-os dados de popularidade vindo da *_API TMDB_*. <br>
+<br>Para este projeto, escolhi múltiplas análises, com intuido em aproveitar ao máximo as técnicas de ETL. Escolhi três bases de dados; aquivo CSV,API TMDB e IMDB.
+Para início, extrair os filmes mais populares disponíveis no arquivo _'movies.csv_' levando como critério de julgamento a pontuação de nota média e votação. Com 
+os _filmes mais polulares entre 2020 a 2023_ em mão, extrair os dados de população dos mesmo vindo da API TMDB. <br>
+Para complentar, extrair da IMDB os filmes que tiveram alguma premiação ou reconhecimento.
+O foco desta analise é extrair os filmes mais populares com o máximo de informações que o julgam como tal. <br>
 <br>
-     A análise, será dividida em partes, após extrair informações que julgam um filme como popular (CSV e TMDB) e limpeza
-de dados, uma nova análise será feita, quem são eles? <br>
-<br>
-     Descobrindo quem são, inicio uma nova extração, agora na IMDB (através do ID disponível no CSV) os filmes populares, tiveram 
-premiações(filmes e atores)? Se sim, quais? 
-_Essa parte da análise, escolhir trazer da IMDB porque não estão disponiveis na TMDB_.<br>
-<br>
-     *Endpoint*, para trabalhar na TMDB, ecolhi a que eu conseguisse trazer por filme, assim trago os dados que preciso diretamente.<br>
-Sem precisar de paginação.
 
+---
+<br>
 
 **Por que do tema?**
 
-_Trabalhar com múltiplas análises_: Quero através de uma análise criar outra, 'brincar com dados' juntando ambas terei a conclusão do tema.
+_Trabalhar com múltiplas análises_: Quero através de uma análise criar outra, 'brincar com dados' juntando ambas para conclusão do tema.
 
 ---
 **Desenvolvimento - Codificando** <br>
 <br>
-     Transformar a ideia em código, foi um dos maiores desafios, [aqui](https://github.com/suellencosta7/Trilha_Aprendizado/blob/main/Sprint8/ETL_API_TMDB/documentation.md) explico detalhadamente a função do meu código.<br> 
+     Transformar a ideia em código, foi um dos maiores desafios, [aqui](https://github.com/suellencosta7/projeto_estagio/blob/main/arquivos/documentation.md) explico detalhadamente a função do meu código.<br> 
 <br> 
-Em resumo, na primeira parte busco do CSV filmes com os gêneros que preciso, excluído colunas desnecessária e focando nos dados de <br>
-votação e ano de lançamento.<br> 
+Em resumo, na primeira parte busco do CSV filmes com os _gêneros_ que preciso,pois neste arquivo há diferentes generos e informações, excluir colunas desnecessária focando nos dados de _nota,votação e ano de lançamento_ .<br> 
 <br> 
 Com os filmes em mãos, começaram as requisições, busquei o que faltava na _TMDB_ por filme, ou seja, os filmes que vieram do CSV, se tornou uma lista como parâmetro
-no for que foi percorrendo na API e trazendo somente o que eu precisava, o filme específico e os dados de populariddade. <br> 
-<br>
-O foco é trabalhar diretamente nos filmes que tenho no CSV, tranzendo novas informações, não mais filme.
-
----
-**BONUS**
-<br>
-* O que teve na sprint: <br>
-
-     [x] **Análise e extração de informações do CSV e API** <br> 
-     [x] **Alimentação no data-lake via _Lambda-S3_** <br> 
-     [x] **Atividades práticas com Python e Spark**<br> 
-     
+no [for](https://wiki.python.org/moin/ForLoop) que foi percorrendo na API TBDB  trazendo somente o que eu precisava, o filme específico e os dados de populariddade.
+O mesmo foi feito na IMDB, porém extraindo somente filmes que foram premiados e qual premiação foi.  <br> 
 <br>
 
-**Resumo pessoal** <br>
-<br>
-Tive várias dificuldades, dentre elas, elaboração do código, tanto localmente, quanto na nuvem, exercícios do Spark, mas a maior 
-que enfrentei nesta fase, foi a organização com os dados _(ETL/API)_. Gastei muito tempo para entender como trabalhar com a API
-e o que fazer com o 'excesso de informação' disponível e criar uma análise  com base no arquivo ja existente. <br> 
-<br>
-Obtive muita informação e pouco destino, perdi tempo, código e rendimento. <br>
-<br>
-Maior aprendizado, saber gerenciar tempo e tarefas, deixar claro o que o código deve fazer antes de existir e criar melhorias,<br>
-novas funções, após sua 1° versão.

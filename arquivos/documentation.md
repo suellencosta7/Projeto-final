@@ -10,7 +10,7 @@ hospedado no [_Simple Storage Service (S3)_](https://aws.amazon.com/pt/s3/).<br>
 
 Para realizar esta etapa,usei dois serviços, [Lambda](https://aws.amazon.com/pt/lambda/) e S3, conectando ambos da seguinte forma:<BR> 
 <br>
-![conexao](https://github.com/suellencosta7/Mini_Projetos.Front/blob/main/imgs/conex%C3%A3oBucket.PNG)
+![conexao](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/conex%C3%A3oBucket.PNG)
 
 <br>
 
@@ -35,13 +35,13 @@ extrair os filmes específicos para depois trabalhar com a extração na API. <b
 
 <br>
 
-![CSV](https://github.com/suellencosta7/Mini_Projetos.Front/blob/main/imgs/readCSV.PNG) <br>
+![CSV](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/readCSV.PNG) <br>
 
 
 Para extrair os filmes necessários do CSV, criei um [DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) com a função [loc](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html) para selecionar colunas e linhas do que <br>
 precisaria.<br>
 
-![DATAFRAME](https://github.com/suellencosta7/Mini_Projetos.Front/blob/main/imgs/DataFrames.PNG)
+![DATAFRAME](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/DataFrames.PNG)
 
  ## API TMDB
 
@@ -60,6 +60,6 @@ Quando completam 100 filmes,ambas são zeradas e um novo lote é criado.
 Para salvar os lotes no S3 usei a função [put_object](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) da biblioteca *Boto3* para enviar um objeto (arquivo) para o bucket.<br> 
  <br>
 
-![save](https://github.com/suellencosta7/Mini_Projetos.Front/blob/main/imgs/CondicaoSave.PNG) <br>
+![save](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/CondicaoSave.PNG) <br>
 
-![lotes](https://github.com/suellencosta7/Mini_Projetos.Front/blob/main/imgs/JSONS.PNG)
+![lotes](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/JSONS.PNG)

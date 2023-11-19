@@ -1,4 +1,4 @@
-### Popularidade e premiações dos filmes e atores entre 2020 a 2023 <br> ![Icon.Compass](https://github.com/suellencosta7/Trilha_Aprendizado/blob/main/icon-compass.png)
+###  ![Icon.Compass](https://github.com/suellencosta7/Trilha_Aprendizado/blob/main/icon-compass.png) Popularidade e premiações dos filmes entre 2020 a 2023 
 ##### Gênero: _Animação e Comédia_ ![Icon.movie](https://github.com/suellencosta7/Mini_Projetos.Front/blob/main/imgs/icons8-projetor-de-filme-32.png)
 
 ---
@@ -63,3 +63,7 @@ Para salvar os lotes no S3 usei a função [put_object](https://docs.aws.amazon.
 ![save](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/CondicaoSave.PNG) <br>
 
 ![lotes](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/JSONS.PNG)
+
+### IMDB
+O mesmo ocorreu na IMDB, mas desta vez ele trouxe somente os filmes que tiveram premiação e qual foi <br>
+![IMDB]()

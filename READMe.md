@@ -1,6 +1,6 @@
 
 ### Programa de bolsas
-![d](https://github.com/suellencosta7/projeto_estagio/tree/main/arquivos/imgs/icon-compass.png) ***Compass UOL em parceria com a UniCesumar*** <br>
+![d](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/icon-compass.png) ***Compass UOL em parceria com a UniCesumar*** <br>
  
  
  * Etapa supervisionada por Augusto Schnorr
@@ -35,7 +35,7 @@ _Trabalhar com múltiplas análises_: Quero através de uma análise criar outra
 ---
 **Desenvolvimento - Codificando** <br>
 <br>
-     Transformar a ideia em código, foi um dos maiores desafios, [aqui](https://github.com/suellencosta7/projeto_estagio/blob/main/arquivos/documentation.md) explico detalhadamente a função do meu código.<br> 
+     Transformar a ideia em código, foi um dos maiores desafios, [aqui](https://github.com/suellencosta7/Projeto-final/blob/main/arquivos/documentation.md) explico detalhadamente a função do meu código.<br> 
 <br> 
 Em resumo, na primeira parte busco do CSV filmes com os _gêneros_ que preciso,pois neste arquivo há diferentes generos e informações, excluir colunas desnecessária focando nos dados de _nota,votação e ano de lançamento_ .<br> 
 <br> 

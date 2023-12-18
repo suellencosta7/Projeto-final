@@ -3,11 +3,10 @@
 ![d](https://github.com/suellencosta7/Projeto-final/blob/main/imgs/icon-compass.png) ***Compass UOL em parceria com a UniCesumar*** <br>
  
  
- * Etapa supervisionada por Augusto Schnorr
 
 
    "AWS Data Egineering" empregado pela Compass.uol.<br>
-    O desafio foi : _Usar o aquivo CSV como base, tranzendo novas informações da API TBDB ou Twiter de acordo com o tema escolhido_.
+    O desafio foi : _Usar o aquivo CSV como base, tranzendo novas informações da API TMDB ou Twiter de acordo com o tema escolhido_.
 
 
 
@@ -40,7 +39,7 @@ _Trabalhar com múltiplas análises_: Quero através de uma análise criar outra
 Em resumo, na primeira parte busco do CSV filmes com os _gêneros_ que preciso,pois neste arquivo há diferentes generos e informações, excluir colunas desnecessária focando nos dados de _nota,votação e ano de lançamento_ .<br> 
 <br> 
 Com os filmes em mãos, começaram as requisições, busquei o que faltava na _TMDB_ por filme, ou seja, os filmes que vieram do CSV, se tornou uma lista como parâmetro
-no [for](https://wiki.python.org/moin/ForLoop) que foi percorrendo na API TBDB  trazendo somente o que eu precisava, o filme específico e os dados de populariddade.
+no [for](https://wiki.python.org/moin/ForLoop) que foi percorrendo na API TMDB  trazendo somente o que eu precisava, o filme específico e os dados de populariddade.
 O mesmo foi feito na IMDB, porém extraindo somente filmes que foram premiados e qual premiação foi.  <br> 
 <br>
 
